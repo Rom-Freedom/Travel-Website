@@ -4,3 +4,60 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+
+body {
+    overflow-x: hidden;
+}
+.hero {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.container {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.hero header {
+    padding: 40px 0 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero header .logo h3 a {
+    display: block;
+    color: #194da1;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* Hamburger Menu */
+.hero header nav .ham {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: 3%;
+    top: 45px;
+    z-index: 5;
+    background: tomato;
+    cursor: pointer;
+    display: none;
+}
+.hero header nav .ham span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #1e56a3;
+    transition: .3s;
+    transition-property: transform, opacity;
+}
+.hero header nav .ham span:nth-child(2) {
+    margin: 7px 0;
+}
