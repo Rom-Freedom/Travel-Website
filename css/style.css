@@ -61,3 +61,40 @@ body {
 .hero header nav .ham span:nth-child(2) {
     margin: 7px 0;
 }
+
+.hero header nav .nav-list {
+    list-style: none;
+}
+.hero header nav .nav-list li {
+    display: inline-block;
+}
+.hero header nav .nav-list li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #292d33;
+    margin-right: 55px;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+.hero header nav .nav-list li:not(:last-child) a:hover,
+.hero header nav .nav-list li:not(:last-child) a:focus {
+    border-bottom: 2px solid #292d33;
+}
+.hero header nav .nav-list li.active a {
+    border-bottom: 2px solid #292d33;
+}
+.hero header nav .nav-list li.btn a {
+    color: #1e56a3;
+    background: transparent;
+    border: 2px solid #1e56a3;
+    padding: 10px 32px;
+    line-height: 1.1;
+}
+.hero header nav .nav-list li.btn:hover a {
+    color: #ffe299;
+    background: #1e56a3;
+    border: 2px solid #1e56a3;
+    transition: .3s;
+}
