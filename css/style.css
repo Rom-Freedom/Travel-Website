@@ -98,3 +98,46 @@ body {
     border: 2px solid #1e56a3;
     transition: .3s;
 }
+
+.hero .banner {
+    padding-top: 200px;
+}
+.hero .banner .text {
+    margin-bottom: 40px;
+}
+.hero .banner .text h1 {
+    font-size: 68px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: #1e56a3;
+    padding: 15px 0 15px;
+}
+.hero .banner .text h2 {
+    color: #292d33;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+.hero .banner .text p {
+    max-width: 100%;
+    width: 400px;
+    color: #292d33;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero .banner .text button {
+    color: #ffe299;
+    background: #1e56a3;
+    border: none;
+    padding: 12px 32px;
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+.hero .banner .text button:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
