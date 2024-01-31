@@ -46,7 +46,6 @@ body {
     right: 3%;
     top: 45px;
     z-index: 5;
-    background: tomato;
     cursor: pointer;
     display: none;
 }
@@ -176,4 +175,70 @@ body {
 .hero .banner .connect .links a:hover {
     transform: rotate(360deg);
     transition: .6s;
+}
+
+/* Media requires*/
+@media screen and (max-width: 900px) {
+    .hero header nav .ham {
+        display: block;
+        height: 30px;
+    }
+    .click {
+        top: 46px;
+    }
+    .click span {
+        position: absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child {
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2) {
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child {
+        transform: rotate(40deg);
+        top: 0;
+    }
+    .hero header nav .nav-list {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -65%;
+        width: 65%;
+        background: #d6d4b4;
+        z-index: 2;
+        padding: 6% 9%;
+        transition: .3s right;
+    }
+    .hero header nav .nav-list li {
+        display: block;
+    }
+    .hero header nav .nav-list li {
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 0px;
+        margin-bottom: 30px;
+        border-bottom: none;
+        text-align: center;
+    }
+    .hero header nav .nav-list li:not(:last-child) a:hover,
+    .hero header nav .nav-list li:not(:last-child) a:focus {
+        border-bottom: none;
+        color: #1e56a3;
+    }
+    .hero header nav .nav-list li.active a {
+        border-bottom: none;
+    }
+    .hero header nav .nav-list li.btn a {
+        position: absolute;
+        bottom: 4%;
+        right: 9%;
+        left: 9%;
+    }
+    .hero header nav .nav-list.open {
+        right: 0%;
+    }
 }
