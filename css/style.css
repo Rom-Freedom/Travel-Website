@@ -104,6 +104,7 @@ body {
 }
 .hero .banner .text {
     margin-bottom: 40px;
+    margin-bottom: 230px;
 }
 .hero .banner .text h1 {
     font-size: 68px;
@@ -140,4 +141,39 @@ body {
 .hero .banner .text button:hover {
     transform: scale(1.1);
     transition: .3s;
+}
+
+/* Connect */
+.hero .banner .connect {
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero .banner .connect p {
+    font-size: 15px;
+    margin-right: 60px;
+    font-weight: 700;
+    color: #292d33;
+    position: relative;
+}
+.hero .banner .connect p:after {
+    position: absolute;
+    content: "";
+    border: 1px solid #1e56a3;
+    width: 25px;
+    top: 50%;
+    right: -43px;   
+}
+.hero .banner .connect .links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #1e56a3;
+    font-size: 18px;
+    transition: .3s;
+}
+.hero .banner .connect .links a:hover {
+    transform: rotate(360deg);
+    transition: .6s;
 }
